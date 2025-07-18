@@ -1,13 +1,7 @@
-import React from 'react'
+import React from 'react';
 
-interface ScenePageProps {
-    params: {
-        sceneId: string
-    }
-}
-
-const ScenePage: React.FC<ScenePageProps> = ({ params }) => {
-    const { sceneId } = params
+export default function Page({ params }: { params: { sceneId: string } }) {
+    const { sceneId } = params;
 
     return (
         <div className="w-screen h-screen">
@@ -15,7 +9,5 @@ const ScenePage: React.FC<ScenePageProps> = ({ params }) => {
                 Project ID: {sceneId}
             </div>
         </div>
-    )
+    );
 }
-
-export default ScenePage;
