@@ -1,7 +1,9 @@
 import React from 'react';
 
-export default function Page({ params }: { params: { sceneId: string } }) {
-    const { sceneId } = params;
+export default async function Page({ params }: {
+    params: Promise<{ sceneId: string }>
+}) {
+    const { sceneId } = await params;
 
     return (
         <div className="w-screen h-screen">
