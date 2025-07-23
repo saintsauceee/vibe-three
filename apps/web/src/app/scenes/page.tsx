@@ -16,7 +16,10 @@ const page = () => {
                 `
             }}
         >
-            <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 w-full max-w-6xl">
+            <div className="
+                grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 
+                w-full max-w-6xl overflow-y-auto p-4
+            ">
                 {
                     SAMPLE_SCENES.map((scene, index) => (
                         <SceneCard
