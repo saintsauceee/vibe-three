@@ -31,24 +31,23 @@ const BuildTextarea = () => {
             <button
                 className="
                     absolute bottom-3.5 left-3.5 flex items-center justify-center
-                    w-9 h-9 rounded-full border border-gray-400/20 bg-transparent
-                    text-gray-400 hover:bg-gray-700/10 hover:text-cyan-400 transition-colors duration-150
-                    shadow-none focus:outline-none
+                    w-9 h-9 rounded-full border border-gray-400/20 
+                    bg-gray-400/5 text-gray-400 hover:bg-gray-300/10 
+                    hover:text-gray-400 transition-colors duration-300
+                    shadow-none focus:outline-none cursor-pointer
                 "
                 style={{ zIndex: 2 }}
                 type="button"
                 disabled={!value.trim() || value.length > 500}
             >
-                <Paperclip
-                    size={14}
-                />
+                <Paperclip size={14} />
             </button>
             <button
                 className="
                     absolute bottom-3.5 right-3.5 flex items-center justify-center
                     w-9 h-9 rounded-full border border-cyan-400/20 bg-cyan-400/5
-                    text-cyan-300 hover:bg-cyan-400/10 hover:text-white transition-colors duration-150
-                    shadow-none focus:outline-none
+                    text-cyan-300 hover:bg-cyan-400/10 hover:text-white transition-colors duration-300
+                    shadow-none focus:outline-none cursor-pointer
                 "
                 style={{ zIndex: 2 }}
                 type="button"

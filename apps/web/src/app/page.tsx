@@ -1,9 +1,9 @@
 'use client'
 
 import React from "react";
-import Navbar from "@/components/layout/Navbar";
-import BuildTextarea from "@/components/ui/BuildTextarea";
-import HeroSection from "@/components/ui/HeroSection";
+import Navbar from "@/components/home/Navbar";
+import BuildTextarea from "@/components/home/BuildTextarea";
+import HeroSection from "@/components/home/HeroSection";
 
 export default function Home() {
   return (
