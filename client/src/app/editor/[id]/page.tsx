@@ -1,9 +1,13 @@
 import Chat from "@/components/editor/chat/Chat";
 
-export default async function EditorPage({ params }: { params: { id: string } }) {
+interface EditorPageProps {
+    params: { id: string };
+}
+
+export default function EditorPage({ params }: EditorPageProps) {
     return (
         <div className="flex flex-col w-screen h-screen p-2 bg-white">
-            {/* <Chat /> */}
+            <Chat />
         </div>
     );
 }
